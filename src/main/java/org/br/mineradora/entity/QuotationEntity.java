@@ -5,13 +5,14 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
 @Table(name="quotation")
 @Data
 @NoArgsConstructor
-public class QuotationEntity extends PanacheEntity {
+public class QuotationEntity {
 
     @Id
     @GeneratedValue
@@ -19,8 +20,8 @@ public class QuotationEntity extends PanacheEntity {
 
     private Date date;
 
-    @Column(name="currency_price")
-    private String currencyPrice;
+    @Column(name="currency_price", precision = 5, scale = 4)
+    private BigDecimal currencyPrice;
 
     @Column(name="pct_change")
     private String pctChange;
