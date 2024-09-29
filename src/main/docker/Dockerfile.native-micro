@@ -10,11 +10,11 @@
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.native-micro -t quarkus/microservice-cotacao .
+# docker build -f src/main/docker/Dockerfile.native-micro -t quarkus/quotation .
 #
 # Then run the container using:
 #
-# docker run -i --rm -p 8080:8080 quarkus/microservice-cotacao
+# docker run -i --rm -p 8080:8080 quarkus/quotation
 #
 ###
 FROM quay.io/quarkus/quarkus-micro-image:2.0

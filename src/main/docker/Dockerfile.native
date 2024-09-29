@@ -7,11 +7,11 @@
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.native -t quarkus/microservice-cotacao .
+# docker build -f src/main/docker/Dockerfile.native -t quarkus/quotation .
 #
 # Then run the container using:
 #
-# docker run -i --rm -p 8080:8080 quarkus/microservice-cotacao
+# docker run -i --rm -p 8080:8080 quarkus/quotation
 #
 ###
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.10
